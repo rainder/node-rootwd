@@ -1,6 +1,6 @@
 const original = process.cwd();
 
-process.chdir(__dirname);
+process.chdir(process.env.PWD);
 const dir = require('app-root-dir').get();
 process.chdir(dir);
 
